@@ -1,0 +1,70 @@
+{
+    "theme_color": "#14ED82",
+    "background_color": "#0f0f0f",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Playeon",
+    "short_name": "Playeon",
+    "description": "Watch Thousands of Series and Movies. Netlfix, Amazon Orginals available.",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/mask.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/screenshot1.png",
+            "type": "image/png",
+            "sizes": "373x674"
+        },
+        {
+            "src": "/screenshot2.png",
+            "type": "image/png",
+            "sizes": "377x671"
+        },
+        {
+            "src": "/screenshot3.png",
+            "type": "image/png",
+            "sizes": "377x667"
+        },
+        {
+            "src": "/screenshot4.png",
+            "type": "image/png",
+            "sizes": "374x671"
+        },
+        {
+            "src": "/screenshot5.png",
+            "type": "image/png",
+            "sizes": "381x674"
+        },
+        {
+            "src": "/screenshot6.png",
+            "type": "image/png",
+            "sizes": "374x669"
+        }
+    ]
+}

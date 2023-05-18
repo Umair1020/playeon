@@ -1,0 +1,51 @@
+@use "./scss/" as *;
+
+.modal {
+    @include flex(center, center);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: rgba($color: black, $alpha: 0.6);
+    opacity: 0;
+    visibility: hidden;
+   
+    
+    &.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    &__content{
+        padding: 2rem;
+        background-color: $body-bg;
+        width: 50%;
+        opacity: 0;
+        transform: translateY(-250px);
+        transition: transform .6s ease, opacity .6s ease;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        @include tablet{
+            width: 80%;
+        }
+        &__close{
+            position: absolute;
+            right: 14px;
+            top: 2px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+    
+    &.active &__content{
+        opacity: 1;
+        transform: translateY(0);   
+    }
+}

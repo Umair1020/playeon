@@ -1,0 +1,12 @@
+@use "../../styles/scss/" as *;
+
+.footer {
+    padding: 2rem;
+    min-height: 100vh;
+    margin-top: auto;
+
+    p {
+        @include flex(center, center);
+        color: rgb(202, 199, 199);
+    }
+}

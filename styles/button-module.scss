@@ -1,0 +1,65 @@
+@use "./scss/" as *;
+
+button {
+    cursor: pointer;
+    font-family: $font-family;
+}
+
+.btn {
+    // width: 70px;
+    // height: 70px;
+    // border: 1px solid transparent;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: $white;
+    padding: 0.5rem 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: box-shadow 250ms ease;
+    position: relative;
+}
+
+// 14ED82
+// .btn:hover{
+//     background-color: rgba($color: $body-bg, $alpha: 1);
+//     box-shadow: 0px 0px 4px 4px #0a4b2c;
+
+// }
+
+.btn-outline {
+    border: 2px solid $white;
+    background-color: transparent;
+    color: $white;
+    box-shadow: unset;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+.btn-outline:hover {
+    box-shadow: unset;
+    color: $main-color;
+    background-color: $white;
+}
+
+.btn.small {
+    border-width: 2px;
+    padding: .25rem 1.5rem;
+    font-size: 1.5rem;
+}
+
+
+// #1CE07F
+.buttonIconMain {
+    font-size: 4.5rem;
+    color: rgba($color: $main-color, $alpha: .9);
+    transition: 250ms ease;
+
+    @include mobile{
+        font-size: 4.5rem;
+    }
+}
+
+.buttonIconMain:hover {
+    color: rgba($color: #23fc8f, $alpha: 1);
+    transition: 250ms ease;
+}

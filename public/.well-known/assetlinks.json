@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.playeon.twa",
+            "sha256_cert_fingerprints": [
+                "3E:8E:71:6B:A0:DC:2D:DC:C9:5C:F4:9B:E1:8A:E7:BF:82:98:19:5E:C0:E3:46:D0:C4:C6:F6:A0:9D:F2:C4:54"
+            ]
+        }
+    }
+]
